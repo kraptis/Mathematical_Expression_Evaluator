@@ -1,0 +1,91 @@
+
+
+project (assignment5) {
+  exename = assignment5
+  install = .
+
+
+ 
+
+ 
+  Source_Files {
+    
+    Calculator_Flyweight.cpp
+    Calculator_Postfix.cpp
+    Calculator_Visito_v2.cpp
+    Expr_Command_Factory.cpp
+    Flyweight_Expr_Command_Factory.cpp
+    Expr_Command.cpp
+    Binary_Op_Command.cpp
+    Number_Command.cpp
+    Add_Command.cpp
+    Subtract_Command.cpp
+    Multiply_Command.cpp
+    Devide_Command.cpp
+    Percentage_Command.cpp
+    Parenthesis_Command.cpp
+    Addition_Node.cpp
+    Binary_Expr_Node.cpp
+    Divition_Node.cpp
+    Eval_Expr_Tree.cpp
+    Expr_Builder.cpp
+    Expr_Node.cpp
+    Expr_Node_Visitor.cpp
+    Expr_Tree_Builder.cpp
+    Multiply_Node.cpp
+    Number_Node.cpp
+    Parenthesis_Node.cpp
+    Percentage_Node.cpp
+    Subtraction_Node.cpp
+    Stack_Expr_Command_Factory.cpp
+    
+    driver.cpp
+  }
+
+  Header_Files {
+    Calculator_Flyweight.h
+    Calculator_Postfix.h
+    Calculator_Visito_v2.h
+    Expr_Command_Factory.h
+    Flyweight_Expr_Command_Factory.h
+    Expr_Command.h
+    Binary_Op_Command.h
+    Number_Command.h
+    Add_Command.h
+    Subtract_Command.h
+    Multiply_Command.h
+    Devide_Command.h
+    Percentage_Command.h
+    Parenthesis_Command.h
+    Calculator_Visito_v2.h
+    Addition_Node.h
+    Binary_Expr_Node.h
+    Divition_Node.h
+    Eval_Expr_Tree.h
+    Expr_Builder.h
+    Expr_Node.h
+    Expr_Node_Visitor.h
+    Expr_Tree_Builder.h
+    Multiply_Node.h
+    Number_Node.h
+    Parenthesis_Node.h
+    Percentage_Node.h
+    Subtraction_Node.h
+    Stack_Expr_Command_Factory.h
+    
+  }
+
+  Inline_Files {
+   
+    
+  } 
+
+  Template_Files {
+    //Fixed_Array.cpp
+    Stack.cpp
+    Queue.cpp
+    Array.cpp
+    Array_Iterator.cpp
+    
+  }
+}
