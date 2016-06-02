@@ -93,18 +93,14 @@ public:
     void clear (void);
     
 private:
-    // Konstantinos, there is no need allocate the array on the heap.
-    // It is OK to allocate it on the stack.
+   
     
     // add member variable here
     //Array <T>  *elements_;
     
-	int front_; //the front element of the circular queue
+    int front_; //the front element of the circular queue
     int rear_; // the rear element of the circular queue
     
-    // Konstantinos, there is no need to allocate an exception object.
-    // This is just taking up unnecessary space/memory in the class.
-	//empty_exception error;
 };
 
 // include the inline files
