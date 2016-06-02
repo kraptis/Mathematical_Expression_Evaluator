@@ -6,27 +6,9 @@
 //  Copyright (c) 2015 Dinos Raptis. All rights reserved.
 //
 
-//#ifndef __composition_xcode__Stack__
-//#define __composition_xcode__Stack__
 
-//#ifndef _Stack_H_
-//#define _Stack_H_
 
-//#include <iostream>
 
-//#endif /* defined(__composition_xcode__Stack__) */
-
-// -*- C++ -*-
-// $Id: Stack.h 380 2010-02-08 05:10:33Z hillj $
-
-//==============================================================================
-/**
- * Honor Pledge:
- *
- * I pledge that I have neither given nor received any help
- * on this assignment.
- */
-//==============================================================================
 
 #ifndef _CS507_STACK_H_
 #define _CS507_STACK_H_
@@ -122,16 +104,12 @@ public:
     void clear (void);
     
 private:
-    // Konstantinos, there is no need allocate the array on the heap.
-    // It is OK to allocate it on the stack.
+   
     
     // add member variable here
-   // Array <T>  *elements_;
 	int top_; // the top element of the stack
     
-    // Konstantinos, there is no need to allocate an exception object.
-    // This is just taking up unnecessary space/memory in the class.
-	//empty_exception error;
+    
 };
 
 // include the inline files
