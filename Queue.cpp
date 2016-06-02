@@ -13,8 +13,6 @@
 
 template <typename T>
 Queue <T>:: Queue(void)
-// Konstantinos, each member variable should be initialized on its own
-// line. Repeat offense: -2 points.
 :elements_(DEFAULT_SIZE),front_(-1),rear_(-1)
 {
     
@@ -23,8 +21,6 @@ Queue <T>:: Queue(void)
 
 template <typename T>
 Queue <T>::Queue (const Queue & queue)
-// Konstantinos, each member variable should be initialized on its own
-// line. Repeat offense: -2 points.
 :elements_(abs(queue.front_-queue.rear_)+1),front_(queue.front_),rear_(queue.rear_)
 {
     //copy all the elements to the new queue
@@ -51,14 +47,6 @@ Queue<T>::~Queue (void)
 template <typename T>
 void Queue <T>::enqueue (T element)
 {
-    // Konstantinos, there is no need to allocate a new array of
-    // a different size and copy the elements over. That is the
-    // purpose of the resize() method. Moreover, this is an ineffecient
-    // design for a queue. You should be trying to use space as
-    // effeciently as possible without have to resize() the queue for
-    // each element inserted.
-    
-    
     //circular queue
     
     //check if is full, then resize
