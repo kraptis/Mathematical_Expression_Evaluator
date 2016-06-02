@@ -6,12 +6,7 @@
 //  Copyright (c) 2015 Dinos Raptis. All rights reserved.
 //
 
-// $Id: Stack.cpp 827 2011-02-07 14:20:53Z hillj $
 
-// Honor Pledge:
-//
-// I pledge that I have neither given nor received any help
-// on this assignment.
 
 //
 // Stack
@@ -21,8 +16,6 @@
 
 template <typename T>
 Stack <T>:: Stack(void)
-// Konstantinos, each member variable should be initialized on its own
-// line. Repeat offense: -2 points.
 :elements_(DEFAULT_SIZE),top_(0)
 {
    
@@ -33,8 +26,6 @@ Stack <T>:: Stack(void)
 //
 template <typename T>
 Stack <T>::Stack (const Stack & stack)
-// Konstantinos, each member variable should be initialized on its own
-// line. Repeat offense: -2 points.
 :elements_(stack.top_),top_(stack.top_)
 {
     //copy all the elements
@@ -62,11 +53,6 @@ Stack <T>::~Stack (void)
 template <typename T>
 void Stack <T>::push (T element)
 {
-    
-    
-    // Konstantinos, there is no need to allocate a new array each time
-    // you want to add an element. Just use the resize() method.
-    
     //check if it is full, then resize
         
     if(top_==elements_.max_size())
@@ -90,16 +76,6 @@ void Stack <T>::pop (void)
 
     if(top_<0)
         throw empty_exception();
-    
-    // Konstantinos, do not set the old spae to NULL. This will result
-    // in a compilation error if you use a type that does not support
-    // type conversion with NULL.
-    
-    // Konstantinos, as stated in class many times, do not use NULL.
-    // Instead, you 0 or nullptr (in case of C++11).
-    //delete the top element of the stack
-    //elements_[top_-1]==0;
-    //elements_.set(top_-1,0);
     
     top_--;
 }
